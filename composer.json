@@ -1,0 +1,16 @@
+{
+    "name": "fabs87/databaseloggerbrotzka",
+    "description": "A package for logging to a database.",
+    "type": "library",
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "authors": [
+        {
+            "name": "Fabian Hagen",
+            "email": "fabianhagen87@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
