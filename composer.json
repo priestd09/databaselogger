@@ -1,6 +1,7 @@
 {
     "name": "fabs87/databaseloggerbrotzka",
     "description": "A package for logging to a database.",
+    "keywords": ["laravel", "logging", "database"],
     "type": "library",
     "require-dev": {
         "guzzlehttp/guzzle": "^6.2"
