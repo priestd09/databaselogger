@@ -3,9 +3,7 @@
     "description": "A package for logging to a database.",
     "keywords": ["laravel", "logging", "database"],
     "type": "library",
-    "require-dev": {
-        //"guzzlehttp/guzzle": "^6.2"
-    },
+    "require-dev": {},
     "authors": [
         {
             "name": "Fabian Hagen",
