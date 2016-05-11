@@ -1,6 +1,6 @@
 {
     "name": "brotzka/databaselogger",
-    "description": "A package for logging to a database.",
+    "description": "A package for Laravel. Used for save logs to the database and make custom logs.",
     "keywords": ["laravel", "logging", "database"],
     "type": "library",
     "require-dev": {},

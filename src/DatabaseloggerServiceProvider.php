@@ -25,18 +25,16 @@ class DatabaseloggerServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/views', 'brotzka-databaselogger');
         $this->publishes(
-            [__DIR__ . '/views' => base_path('resources/views/vendor/brotzka-databaselogger')],
-            'views'
+            [__DIR__ . '/views' => base_path('resources/views/vendor/brotzka-databaselogger')]
         );
 
         $this->publishes(
             // Keep the config_path() empty, so the config file will be published directly to the config directory
-            [__DIR__ . '/config' => config_path()],
-            'config'
+            [__DIR__ . '/config' => config_path()]
         );
 
         $this->publishes([
             __DIR__ . '/migrations' => $this->app->databasePath() . '/migrations'
-        ], 'migrations');
+        ]);
     }
 }
