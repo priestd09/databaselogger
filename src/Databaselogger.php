@@ -26,7 +26,6 @@ class Databaselogger {
     public static function getLevels(){
         return Log::getLevels();
     }
-    
 
     /*
     |--------------------------------------------------------------------------

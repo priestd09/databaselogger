@@ -15,7 +15,7 @@ class CreateBrotzkaLogsTable extends Migration
         Schema::create('brotzka_databaselogger_logs', function(Blueprint $t){
             $t->increments('id');
             $t->string('level');
-            $t->string('text');
+            $t->string('title');
             $t->mediumText('message');
             $t->tinyInteger('read');
             $t->tinyInteger('fixed');
