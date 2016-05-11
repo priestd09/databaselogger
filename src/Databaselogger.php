@@ -260,6 +260,8 @@ class Databaselogger {
     |
     */
     /**
+     * Deletes one or more logs
+     * 
      * @param null $id
      */
     public static function moveToTrash($id = NULL){
@@ -277,6 +279,8 @@ class Databaselogger {
     }
 
     /**
+     * Drops all trashed Logs from the database
+     * 
      * @return bool
      */
     public static function emptyTrash(){
@@ -291,9 +295,11 @@ class Databaselogger {
     }
 
     /**
+     * Restore one or more logs
+     * 
      * @param null $id
      */
-    public static function restoreLog($id){
+    public static function restoreLog($id = NULL){
         if($id !== NULL){
             if(is_array($id)){
                 foreach($id as $one){
@@ -323,7 +329,7 @@ class Databaselogger {
                 'url'   => url('/'),
             ];
 
-            Mail::send('brotzka-databaselogger::mail', $data, function ($m) {
+            Mail::send('brotzka-databaselogger::mail', $data, function ($m) use($log) {
                 $m->from(
                     config("databaselogger.mailFrom"),
                     config("databaselogger.mailFromName")
@@ -331,7 +337,7 @@ class Databaselogger {
 
                 $m->to(
                     config("databaselogger.mailTo"),
-                    config("databaselogger.mailToName"))->subject(config("databaselogger.emergencySubject")
+                    config("databaselogger.mailToName"))->subject(config("databaselogger.emergencySubject " . $log->title)
                 );
             });
         }
