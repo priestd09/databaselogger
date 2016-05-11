@@ -6,13 +6,13 @@
  * Time: 07:24
  */
 
-namespace Fabs87\Databaselogger;
+namespace Brotzka\Databaselogger;
 
 use Illuminate\Support\Facades\Facade;
 
 class DatabaseloggerFacade extends Facade
 {
     protected static function getFacadeAccessor() {
-        return 'fabs87-databaselogger';
+        return 'brotzka-databaselogger';
     }
 }
