@@ -1,5 +1,5 @@
 {
-    "name": "fabs87/databaseloggerbrotzka",
+    "name": "brotzka/databaselogger",
     "description": "A package for logging to a database.",
     "keywords": ["laravel", "logging", "database"],
     "type": "library",
@@ -14,4 +14,9 @@
     ],
     "minimum-stability": "stable",
     "require": {}
+    "autoload": {
+        "psr-4": {
+            "Brotzka\\Databaselogger\\": "src/"
+        }
+    }
 }
