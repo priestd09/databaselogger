@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/brotzka/databaselogger/v/stable)](https://packagist.org/packages/brotzka/databaselogger)
+[![Total Downloads](https://poser.pugx.org/brotzka/databaselogger/downloads)](https://packagist.org/packages/brotzka/databaselogger)
+[![Latest Unstable Version](https://poser.pugx.org/brotzka/databaselogger/v/unstable)](https://packagist.org/packages/brotzka/databaselogger)
+[![License](https://poser.pugx.org/brotzka/databaselogger/license)](https://packagist.org/packages/brotzka/databaselogger)
+
 # A Laravel Databaselogger
 
 ## Description
