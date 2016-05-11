@@ -40,3 +40,11 @@ Now you have to add service providers and aliases. Open `config/app.php` and scr
 Now scroll down to the `aliases`-array and add the following line at the end:
 
     'Databaselogger' => Brotzka\Databaselogger\DatabaseloggerFacade::class,
+
+Now you have to publish the config, migration and view, so run this command:
+
+    php artisan vendor:publish
+
+If it doesn't work, try this:
+
+    php artisan vendor:publish --provider="Brotzka\Databaselogger\DatabaseloggerServiceProvider"
